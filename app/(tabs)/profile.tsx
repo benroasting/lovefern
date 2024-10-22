@@ -1,13 +1,14 @@
-import { View, StyleSheet, Button } from "react-native";
-import { theme } from "@/theme";
-import { useUserStore } from "@/store/userStore";
+import { View, StyleSheet } from "react-native";
+import { theme } from "../../theme";
+import { useUserStore } from "../../store/userStore";
+import { CustomButton } from "../components/CustomButton";
 
 export default function Profile() {
   const toggleHasOnboarded = useUserStore((state) => state.toggleHasOnboarded);
 
   return (
     <View style={styles.container}>
-      <Button title="Back to Onboarding" onPress={toggleHasOnboarded} />
+      <CustomButton title="Back to Onboarding" onPress={toggleHasOnboarded} />
     </View>
   );
 }

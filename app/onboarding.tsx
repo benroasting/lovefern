@@ -1,7 +1,9 @@
-import { StyleSheet, Button, View } from "react-native";
-import { theme } from "@/theme";
-import { useUserStore } from "@/store/userStore";
+import { StyleSheet } from "react-native";
+import { theme } from "../theme";
+import { useUserStore } from "../store/userStore";
 import { useRouter } from "expo-router";
+import { CustomButton } from "./components/CustomButton";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function App() {
   const router = useRouter();
@@ -12,9 +14,14 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
-      <Button title="Get Started!" onPress={handlePress} />
-    </View>
+    <LinearGradient
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+      colors={[theme.colorAppleGreen, theme.colorWhite]}
+      style={styles.container}
+    >
+      <CustomButton title="Get Started!" onPress={handlePress} />
+    </LinearGradient>
   );
 }
 
