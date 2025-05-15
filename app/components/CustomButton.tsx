@@ -29,7 +29,7 @@ export function CustomButton({ title, onPress }: Props) {
 
 const styles = StyleSheet.create({
   text: {
-    color: "white",
+    color: "gray",
     fontSize: 18,
     fontWeight: "bold",
   },
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 18,
     paddingVertical: 12,
     borderRadius: 6,
-    backgroundColor: theme.colorGreen,
+    backgroundColor: theme.colorWhite,
   },
   buttonPressed: {
     backgroundColor: theme.colorLeafyGreen,
