@@ -4,7 +4,7 @@ import { theme } from "../../theme";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text style={styles.text}>Home</Text>
     </View>
   );
 }
@@ -15,5 +15,9 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colorWhite,
     alignItems: "center",
     justifyContent: "center",
+  },
+  text: {
+    fontSize: 30,
+    fontWeight: "bold",
   },
 });

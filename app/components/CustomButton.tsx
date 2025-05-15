@@ -29,17 +29,19 @@ export function CustomButton({ title, onPress }: Props) {
 
 const styles = StyleSheet.create({
   text: {
-    color: "gray",
+    color: "white",
     fontSize: 18,
     fontWeight: "bold",
   },
   button: {
     paddingHorizontal: 18,
     paddingVertical: 12,
-    borderRadius: 6,
-    backgroundColor: theme.colorWhite,
+    borderRadius: 12,
+    backgroundColor: theme.colorOliveGreen,
+    borderWidth: 7,
+    borderColor: theme.colorDarkOliveGreen,
   },
   buttonPressed: {
-    backgroundColor: theme.colorLeafyGreen,
+    backgroundColor: theme.colorAppleGreen,
   },
 });

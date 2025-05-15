@@ -9,7 +9,7 @@ export default function Layout() {
     (state) => state.hasFinishedOnboarding,
   );
 
-  if (!hasFinishedOnboarding) {
+  if (hasFinishedOnboarding) {
     return <Redirect href="/onboarding" />;
   }
   return (
